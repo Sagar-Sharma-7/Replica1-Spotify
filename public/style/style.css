@@ -115,6 +115,7 @@ body {
 }
 .main-container .right-container .searchbar-wrap .arrow-btn:hover {
   cursor: pointer;
+  background-color: #949494;
 }
 .main-container .right-container .searchbar-wrap .arrow-btn:active {
   background-color: #1DB954;
@@ -394,4 +395,4 @@ body {
   .main-container .right-container .browse-wrap .browse-box-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
-}/*# sourceMappingURL=style.css.map */
+}
