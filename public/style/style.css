@@ -234,4 +234,62 @@ body {
 }
 .main-container .player-container .left-player .like-heart {
   height: 24px;
+}
+.main-container .player-container .controls-wrap {
+  width: 70vw;
+  min-width: calc(100vw - 350px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .player-container .controls-wrap .controllers {
+  width: 30vw;
+  max-width: 350px;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.main-container .player-container .controls-wrap .controllers img {
+  height: 18px;
+}
+.main-container .player-container .controls-wrap .controllers img:hover {
+  cursor: pointer;
+}
+.main-container .player-container .controls-wrap .controllers .pause-icon {
+  height: 48px;
+}
+.main-container .player-container .controls-wrap .slider-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #FFFFFF;
+}
+.main-container .player-container .controls-wrap .slider-wrap .slider-text {
+  font-size: 12px;
+}
+.main-container .player-container .controls-wrap .slider-wrap .slider {
+  margin-top: 4px;
+  width: 50vw;
+}
+.main-container .player-container .controls-wrap .slider-wrap .slider .bg-slider {
+  height: 3px;
+  background-color: #807f7f;
+  border-radius: 50px;
+}
+.main-container .player-container .controls-wrap .slider-wrap .slider .fg-slider {
+  position: relative;
+  top: -3px;
+  height: 3px;
+  background-color: #FFFFFF;
+  width: 83%;
+  border-radius: 50px;
+}
+.main-container .player-container .controls-wrap .slider-wrap .slider .fg-slider:hover {
+  background-color: #1DB954;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
