@@ -12,18 +12,14 @@ $accent-color: #1DB954;
     box-sizing: border-box;
 }
 
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Poppins', sans-serif;
 body{
-    // font-family: 'Poppins', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .main-container{
     width: 100vw;
     height: 100vh;
-    min-height: 800px;
     display: flex;
-
     .left-container{
         width: 30vw;
         max-width: 350px;
@@ -31,17 +27,16 @@ body{
         background-color: $primary-color;
         padding: 20px 20px;
         color: $secondary-color;
-        // div{
-        //     border: 1px solid blue;
-        // }
         .logo-wrap{
             img{
-                height: 36px;
+                height: 3vw;
+                max-height: 36px;
+                min-height: 24px;
             }
         }
         .navbar-wrap{
             padding: 20px 0px;
-            height: 60%;
+            height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -112,6 +107,7 @@ body{
             align-items: center;
             gap: 20px;
             height: 50px;
+            border: 1px solid green;
             .arrow-btn{
                 width: 36px;
                 height: 36px;
@@ -154,6 +150,7 @@ body{
         }
         .genre-wrap{
             padding: 10px 0px;
+            border: 1px solid blue;
             .right-arrow-genre{
                 position: absolute;
                 top: 35%;
@@ -175,7 +172,7 @@ body{
             }
             .genre-box-wrap{
                 display: grid;
-                height: 35vh;
+                height: 30vh;
                 max-height: 400px;
                 grid-template-columns: repeat(2,1fr);
                 gap: 28px;
@@ -200,6 +197,7 @@ body{
             }
         }
         .browse-wrap{
+            border: 1px solid yellow;
             .browse-box-wrap{
                 display: grid;
                 height: 22vh;
@@ -252,6 +250,12 @@ body{
             padding: 16px 28px;
             img{
                 height: 60px;
+                transition: 200ms;
+                &:hover{
+                    border-radius: 50%;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
             }
             .song-title{
                 display: flex;
@@ -260,6 +264,9 @@ body{
                 flex-direction: column;
                 width: 70%;
                 padding: 10px 16px;
+                &:hover{
+                    cursor: pointer;
+                }
                 .song-name{
                     color: $secondary-color;
                     font-weight: 500;
@@ -337,3 +344,30 @@ body{
         }
     }
 }
+
+
+@media screen and (max-height:700px){
+    .main-container{
+        .left-container{
+            .logo-wrap{
+                img{
+                    height: 24px;
+                }
+            }
+            .navbar-wrap{
+                .navbar{
+                    button{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .install-option{
+                font-size: 12px;
+                img{
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+

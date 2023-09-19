@@ -7,12 +7,12 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .main-container {
   width: 100vw;
   height: 100vh;
-  min-height: 800px;
   display: flex;
 }
 .main-container .left-container {
@@ -24,11 +24,13 @@ body {
   color: #FFFFFF;
 }
 .main-container .left-container .logo-wrap img {
-  height: 36px;
+  height: 3vw;
+  max-height: 36px;
+  min-height: 24px;
 }
 .main-container .left-container .navbar-wrap {
   padding: 20px 0px;
-  height: 60%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -98,6 +100,7 @@ body {
   align-items: center;
   gap: 20px;
   height: 50px;
+  border: 1px solid green;
 }
 .main-container .right-container .searchbar-wrap .arrow-btn {
   width: 36px;
@@ -140,6 +143,7 @@ body {
 }
 .main-container .right-container .genre-wrap {
   padding: 10px 0px;
+  border: 1px solid blue;
 }
 .main-container .right-container .genre-wrap .right-arrow-genre {
   position: absolute;
@@ -161,7 +165,7 @@ body {
 }
 .main-container .right-container .genre-wrap .genre-box-wrap {
   display: grid;
-  height: 35vh;
+  height: 30vh;
   max-height: 400px;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
@@ -183,6 +187,9 @@ body {
 }
 .main-container .right-container .genre-wrap .genre-box-wrap .hip-hop {
   background-color: #a4632a;
+}
+.main-container .right-container .browse-wrap {
+  border: 1px solid yellow;
 }
 .main-container .right-container .browse-wrap .browse-box-wrap {
   display: grid;
@@ -234,6 +241,12 @@ body {
 }
 .main-container .player-container .left-player img {
   height: 60px;
+  transition: 200ms;
+}
+.main-container .player-container .left-player img:hover {
+  border-radius: 50%;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .main-container .player-container .left-player .song-title {
   display: flex;
@@ -242,6 +255,9 @@ body {
   flex-direction: column;
   width: 70%;
   padding: 10px 16px;
+}
+.main-container .player-container .left-player .song-title:hover {
+  cursor: pointer;
 }
 .main-container .player-container .left-player .song-title .song-name {
   color: #FFFFFF;
@@ -313,4 +329,19 @@ body {
 .main-container .player-container .controls-wrap .slider-wrap .slider .fg-slider:hover {
   background-color: #1DB954;
   cursor: pointer;
+}
+
+@media screen and (max-height: 700px) {
+  .main-container .left-container .logo-wrap img {
+    height: 24px;
+  }
+  .main-container .left-container .navbar-wrap .navbar button {
+    font-size: 12px;
+  }
+  .main-container .left-container .install-option {
+    font-size: 12px;
+  }
+  .main-container .left-container .install-option img {
+    height: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
