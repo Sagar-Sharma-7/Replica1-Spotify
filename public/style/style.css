@@ -146,7 +146,7 @@ body {
 }
 .main-container .right-container .genre-wrap .right-arrow-genre {
   position: absolute;
-  top: 35%;
+  top: calc(25vh + 50px);
   right: 8px;
   width: 36px;
   height: 36px;
@@ -385,5 +385,13 @@ body {
   }
   .main-container .player-container .controls-wrap .controllers .pause-icon {
     height: 36px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-container .right-container .searchbar-wrap .search-bar {
+    width: 70%;
+  }
+  .main-container .right-container .browse-wrap .browse-box-wrap {
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -152,7 +152,7 @@ body{
             padding: 10px 0px;
             .right-arrow-genre{
                 position: absolute;
-                top: 35%;
+                top: calc(25vh + 50px);
                 right: 8px;
                 width: 36px;
                 height: 36px;
@@ -425,4 +425,22 @@ body{
 
     }
 }
+
+@media screen and (max-width:900px){
+    .main-container{
+        .right-container{
+            .searchbar-wrap{
+                .search-bar{
+                    width: 70%;
+                }
+            }
+            .browse-wrap{
+                .browse-box-wrap{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
 
