@@ -70,6 +70,9 @@ body{
                         cursor: pointer;
                         background-color: $gray;
                     }
+                    &:active{
+                        background-color: $accent-color;
+                    }
                     img{
                         height: 24px;
                     }
@@ -151,6 +154,25 @@ body{
         }
         .genre-wrap{
             padding: 10px 0px;
+            .right-arrow-genre{
+                position: absolute;
+                top: 35%;
+                right: 8px;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-color;
+                border-radius: 50%;
+                z-index: 9999;
+                transition: 200ms;
+                &:hover{
+                    // background-color: $accent-color;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
             .genre-box-wrap{
                 display: grid;
                 height: 35vh;

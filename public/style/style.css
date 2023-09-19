@@ -60,6 +60,9 @@ body {
   cursor: pointer;
   background-color: #161616;
 }
+.main-container .left-container .navbar-wrap .navbar button:active {
+  background-color: #1DB954;
+}
 .main-container .left-container .navbar-wrap .navbar button img {
   height: 24px;
 }
@@ -137,6 +140,24 @@ body {
 }
 .main-container .right-container .genre-wrap {
   padding: 10px 0px;
+}
+.main-container .right-container .genre-wrap .right-arrow-genre {
+  position: absolute;
+  top: 35%;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  z-index: 9999;
+  transition: 200ms;
+}
+.main-container .right-container .genre-wrap .right-arrow-genre:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .main-container .right-container .genre-wrap .genre-box-wrap {
   display: grid;
